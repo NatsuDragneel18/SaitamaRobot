@@ -1,4 +1,4 @@
-# AI module using Intellivoid's Coffeehouse API by @TheRealPhoenix
+# AI module using Intellivoid's Coffeehouse API by @Denzid
 from time import time, sleep
 
 from coffeehouse.lydia import LydiaAI
@@ -110,7 +110,7 @@ __help__ = f"""
 Chatbot utilizes the CoffeeHouse API and allows Saitama to talk back making your chat more interactive.
 This is an ongoing upgrade and is only available in your chats if you reach out to {SUPPORT_CHAT} and ask for it. 
 
-In future we might make it open for any chat and controllable by group admins.
+In future we might make it open for any chat and controllable by group admins. Contact @AnieSupport For Any Types Of Problems.
 
 Powered by CoffeeHouse (https://coffeehouse.intellivoid.net/) from @Intellivoid
 Commands: These only work for Saitama Staff users. 
