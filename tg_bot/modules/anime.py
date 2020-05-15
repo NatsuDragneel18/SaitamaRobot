@@ -492,7 +492,7 @@ def kayo(bot: Bot, update: Update):
 
 
 __help__ = """
-Get information about anime, manga or characters from [MyAnimeList](https://myanimelist.net).
+Get information about anime, manga or characters from [MyAnimeList](https://myanimelist.net) For Any Problems Join @Aniesupport.
 
 *Available commands:*
 
