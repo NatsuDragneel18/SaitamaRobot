@@ -198,8 +198,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     try:
         bot.send_message(user_id,
                          "You have been globally banned from all groups where I have administrative permissions."
-                         f"If you think that this was a mistake, you may appeal your ban here: {SUPPORT_CHAT}",
-                         parse_mode=ParseMode.HTML)
+                         f"If you think that this was a mistake, you may appeal your ban here @Aniesupport)
     except:
         pass  # bot probably blocked by user
 
@@ -409,7 +408,7 @@ __help__ = f"""
 Gbans, also known as global bans, are used by the bot owners to ban spammers across all groups. This helps protect \
 you and your groups by removing spam flooders as quickly as possible. They can be disabled for your group by calling \
 /gbanstat
-Note: You can appeal gbans or ask gbans at {SUPPORT_CHAT}
+Note: You can appeal gbans or ask gbans at @Aniesupport
 """
 
 GBAN_HANDLER = CommandHandler("gban", gban, pass_args=True)
