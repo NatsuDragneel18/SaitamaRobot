@@ -89,7 +89,7 @@ def rban(bot: Bot, update: Update, args: List[str]):
     message = update.effective_message
 
     if not args:
-        message.reply_text("You don't seem to be referring to a chat/user.")
+        message.reply_text("You don't seem to be referring to a chat/user. @Aniesupport Join For Any Mistakes")
         return
 
     user_id, chat_id = extract_user_and_text(message, args)
