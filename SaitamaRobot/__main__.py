@@ -72,8 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hey hi {}, I'm {}!
-I am an Anime themed group management bot.
-Built by weebs for weebs, I specialize in managing anime eccentric communities!
+I am an Group Management Bot only for Anime Chamber Club.
 """
 
 HELP_STRINGS = """
@@ -84,7 +83,7 @@ the things I can help you with.
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
+ • /donate : Message me in pm to get more information.
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
@@ -97,12 +96,11 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/842709bf36d6c9ff8d724.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+
+But My Owner Is Very Rich No Need To Donate me😉😉."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -227,28 +225,28 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🚑 Support",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                text="Anime Chamber",
+                                url=f"https://t.me/animechamberanime",
                             ),
                             InlineKeyboardButton(
-                                text="🔔 Updates",
-                                url="https://t.me/OnePunchUpdates",
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                                text="🧾 Getting Started",
-                                url="https://t.me/OnePunchUpdates/29",
-                            ),
-                            InlineKeyboardButton(
-                                text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                                text="Manga Chamber",
+                                url="https://t.me/mangachamber", 
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="☠️ Kaizoku Network",
-                                url="https://t.me/Kaizoku/4",
+                                text="Request Group",
+                                url="https://t.me/thechamberofanimefans",
+                            ),
+                            InlineKeyboardButton(
+                                text="Owner 1",
+                                url="https://t.m/Natsu_Dragneel_FT",
+                            ),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="Owner 2",
+                                url="https://t.me/Natsu_dragneel_18legend",
                             ),
                         ],
                     ],
