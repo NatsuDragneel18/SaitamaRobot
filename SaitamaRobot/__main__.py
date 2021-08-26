@@ -73,6 +73,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hey hi {}, I'm {}!
 I am an Group Management bot only for Anime Chamber Club.
+To see my command type /help....
 """
 
 HELP_STRINGS = """
