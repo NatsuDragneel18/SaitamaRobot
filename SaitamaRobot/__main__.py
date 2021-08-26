@@ -71,9 +71,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey hi {}, I'm {}!
-I am an Group Management bot only for Anime Chamber Club.
-To see my command type /help....
+It's better to be hurt than to hurt others. Nice people can be happy with just that
+
+Hi {}, I am Ken Kaneki know as the Eyepatch Ghoul
+
+I help Anime Chamber Club by providing some fun games and anime commands for members. Click /help to see my commands..
 """
 
 HELP_STRINGS = """
@@ -96,7 +98,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/842709bf36d6c9ff8d724.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/a6310c7bb697983e0b8b8.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 
