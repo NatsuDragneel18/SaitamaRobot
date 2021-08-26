@@ -17,17 +17,15 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am a group management bot With Some Extra Features.
-To add me to your group click ["HERE"](t.me/aniebot?startgroup=botstart)
-You can find my list of available commands with /help.
+It's better to be hurt than to hurt others. Nice people can be happy with just that
 
- See [Basic Configuration Checklist](https://t.me/Anienews/3) on how to secure your group.
-The support group chat is at {}.
+Hi * {}*, I am *Ken Kaneki* know as the *Eyepatch Ghoul*.
+
+I help Anime Chamber Club by providing some fun games and anime commands for members. Click /help to see my commands
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Hey there! My name is *Ken Kaneki*.
 I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
 the things I can help you with.
 
@@ -46,9 +44,10 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [Me](t.me/Denzid), or [Here](https://www.instamojo.com/@educatorfoundation/)."""
+
+But my owner is already very rich, No need to donate.
+
+Thanks."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -110,8 +109,8 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def test(bot: Bot, update: Update):
     # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("This person edited a message")
+    # update.effective_message.reply_text("Yeah say what.... Wanna count from 1000-7?", parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text(" ")
     print(update.effective_message)
 
 @run_async
@@ -140,7 +139,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), SUPPORT_CHAT),
                 parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
-        update.effective_message.reply_text("Yo, whadup?")
+        update.effective_message.reply_text("Life doesn't let you sleep")
 
 
 # for test purposes
